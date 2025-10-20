@@ -32,7 +32,8 @@ This project simulates a real corporate IT environment — perfect for showcasin
 
 ## 📊 Architecture Diagram
 
-![Active Directory Lab Diagram](architecture.png)
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/da22902a-a088-4511-b010-13cf381588f3" />
+
 
 
 
