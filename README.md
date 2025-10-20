@@ -35,6 +35,10 @@ This project simulates a real corporate IT environment — perfect for showcasin
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/da22902a-a088-4511-b010-13cf381588f3" />
 
 
+## 🧰 Tools Used: Windows Server 2022, Windows 10, VirtualBox, Active Directory, DNS, GPO
+
+
+
 
 
 
