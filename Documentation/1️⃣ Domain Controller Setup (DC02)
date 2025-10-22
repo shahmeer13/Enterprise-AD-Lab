@@ -1,0 +1,9 @@
+Installed Windows Server 2022 and configured a static IP (10.0.0.1).
+
+Promoted the server to a Domain Controller (DC) using Active Directory Domain Services.
+
+Created a new domain: corp.local.
+
+Installed DNS Server role to manage name resolution for the domain.
+
+Goal: establish centralized identity and resource management through Active Directory.
