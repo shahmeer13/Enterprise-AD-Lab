@@ -1,0 +1,7 @@
+Configured password policies, desktop restrictions, and mapped network drives using GPOs.
+
+Applied policies domain-wide and to specific OUs for targeted management.
+
+Tested propagation and confirmed settings applied on the client machine.
+
+Goal: automate and enforce consistent configuration and security policies.
