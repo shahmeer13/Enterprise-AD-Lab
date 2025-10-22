@@ -1,0 +1,7 @@
+Created departmental folders under C:\CompanyShares (Finance, HR, IT, Sales).
+
+Applied NTFS permissions so each department’s group had access only to its folder.
+
+Verified access control through group membership testing.
+
+Goal: demonstrate secure file sharing and permission management.
