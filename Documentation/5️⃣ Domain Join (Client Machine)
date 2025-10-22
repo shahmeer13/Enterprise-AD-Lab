@@ -1,0 +1,7 @@
+Configured Windows 10 client to join corp.local domain.
+
+Verified successful domain authentication and user logon.
+
+Tested access to network shares and GPO application.
+
+Goal: connect a workstation to the domain and validate user management.
