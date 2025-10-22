@@ -1,1 +1,2 @@
-
+This lab simulates a small enterprise IT environment using Windows Server 2022 (as a Domain Controller) and Windows 10 Pro (as a client).
+It was deployed in Oracle VirtualBox to practice real-world systems administration, Active Directory, and IT support workflows.
