@@ -1,0 +1,7 @@
+Resolved DNS lookup errors by ensuring DC IP was used as the primary DNS.
+
+Fixed VirtualBox internal network settings to ensure both VMs communicated.
+
+Confirmed firewall rules and AD services started automatically.
+
+Goal: strengthen real-world problem-solving and networking skills.
