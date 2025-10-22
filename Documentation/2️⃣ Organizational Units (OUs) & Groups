@@ -1,0 +1,7 @@
+Created OUs for key departments: IT, HR, Sales, and Finance.
+
+Created Security Groups (e.g., IT-SG, HR-SG, Sales-SG, Finance-SG) to manage access control.
+
+Added ~20 users and assigned them to their corresponding OUs and groups.
+
+Goal: apply group-based permissions and simulate a company-style structure.
