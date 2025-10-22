@@ -1,7 +1,5 @@
-Created departmental folders under C:\CompanyShares (Finance, HR, IT, Sales).
-
-Applied NTFS permissions so each department’s group had access only to its folder.
-
-Verified access control through group membership testing.
-
-Goal: demonstrate secure file sharing and permission management.
+- Created departmental folders under `C:\CompanyShares`
+- Set NTFS permissions so only respective departmental groups could access their folder
+- Shared each folder with the corresponding security group (e.g., Finance-SG)
+- Tested permissions with user logins to confirm isolation
+📸 *See Screenshot: 05_File_Shares.png*
