@@ -1,1 +1,33 @@
+# ---------------------------------------
+# Active DirectoryAutomation_Automation.ps1
+# ---------------------------------------
+
+Import-Module ActiveDirectory
+
+# 1. Create Organizational Units
+New-ADOrganizationalUnit -Name "IT" -Path "DC=corp,DC=local"
+New-ADOrganizationalUnit -Name "HR" -Path "DC=corp,DC=local"
+New-ADOrganizationalUnit -Name "Sales" -Path "DC=corp,DC=local"
+New-ADOrganizationalUnit -Name "Finance" -Path "DC=corp,DC=local"
+
+# 2. Create Security Groups
+New-ADGroup -Name "IT-SG" -GroupScope Global -Path "OU=IT,DC=corp,DC=local"
+New-ADGroup -Name "HR-SG" -GroupScope Global -Path "OU=HR,DC=corp,DC=local"
+New-ADGroup -Name "Sales-SG" -GroupScope Global -Path "OU=Sales,DC=corp,DC=local"
+New-ADGroup -Name "Finance-SG" -GroupScope Global -Path "OU=Finance,DC=corp,DC=local"
+
+# 3. Bulk User Creation from CSV
+Import-Csv "C:\users.csv" | ForEach-Object {
+    New-ADUser -Name $_.Name -SamAccountName $_.Username `
+    -UserPrincipalName "$($_.Username)@corp.local" -Path $_.OU `
+    -AccountPassword (ConvertTo-SecureString "Password123!" -AsPlainText -Force) `
+    -Enabled $true
+}
+
+# 4. Add Users to Groups
+Add-ADGroupMember -Identity "Finance-SG" -Members "FinanceUser1","FinanceUser2"
+Add-ADGroupMember -Identity "IT-SG" -Members "ITUser1","ITUser2"
+
+# 5. Enforce Group Policy Update
+Invoke-GPUpdate -Computer "W10-Client" -Force
 
